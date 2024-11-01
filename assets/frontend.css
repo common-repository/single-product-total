@@ -1,0 +1,65 @@
+.sptotal {
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+}
+.sptotal.sptotal-block{
+    display: block;
+}
+.sptotal label {
+    margin: 0px 25px 0 0;
+}
+.sptotal.sptotal-block label {
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    margin-right: 0;
+}
+.sptotal .currency, .sptotal .total-price {
+    font-weight: 600;
+    font-size: 22px;
+}
+.sptotal.has-color {
+    padding: 10px 20px;
+}
+
+
+.sptotal.fixed {
+    position: fixed;
+    background: #ffffff;
+    z-index: 999;
+    /* border: 1px solid black; */
+    padding: 5px 10px;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.sptotal.fixed_bottom_right, .sptotal.fixed_bottom_left{
+    bottom: 12%;
+}
+.sptotal.fixed_top_right, .sptotal.fixed_top_left{
+    top: 17%;
+}
+.sptotal.fixed_bottom_right, .sptotal.fixed_top_right{
+    right: 0;
+}
+.sptotal.fixed_bottom_left, .sptotal.fixed_top_left{
+    left: 0;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .sptotal label {
+        margin: 0;
+        padding-right: 10px;
+    }
+    .sptotal.sptotal-block label{
+        padding-right: 0;
+    }
+    .sptotal.fixed label, .sptotal.fixed .currency, .sptotal.fixed .total-price{
+        font-size: 14px;
+    }
+    .sptotal.fixed{
+        text-align: center !important;
+    }
+}
